@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "CoreXCrud.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CoreXCrud.Controllers.LoginModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "CoreXCrud.Controllers.OrderDetailsController",
     "Method": "GetOrderDetails",
     "RelativePath": "api/OrderDetails",

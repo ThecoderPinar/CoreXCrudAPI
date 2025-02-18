@@ -23,6 +23,10 @@ namespace CoreXCrud.Models
         [Column(TypeName = "decimal(18,2)")]
         public decimal TotalAmount { get; set; }
 
+        [Required]
+        [MaxLength(20)]
+        public string Status { get; set; } = "Pending"; // 📌 Yeni Sipariş Durumu
+
         // Bir sipariş birçok ürünü içerebilir (Many-to-Many ilişki)
         public ICollection<OrderDetail>? OrderDetails { get; set; }
     }

@@ -143,3 +143,17 @@ C:\Users\pinar\source\repos\CoreXCrudSolution\CoreXCrud\bin\Debug\net8.0\AutoMap
 C:\Users\pinar\source\repos\CoreXCrudSolution\CoreXCrud\bin\Debug\net8.0\FluentValidation.dll
 C:\Users\pinar\source\repos\CoreXCrudSolution\CoreXCrud\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
 C:\Users\pinar\source\repos\CoreXCrudSolution\CoreXCrud\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\pinar\source\repos\CoreXCrudSolution\CoreXCrud\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\pinar\source\repos\CoreXCrudSolution\CoreXCrud\obj\Debug\net8.0\CoreXCrud.sourcelink.json
+C:\Users\pinar\source\repos\CoreXCrudSolution\CoreXCrud\bin\Debug\net8.0\AspNetCoreRateLimit.dll
+C:\Users\pinar\source\repos\CoreXCrudSolution\CoreXCrud\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\pinar\source\repos\CoreXCrudSolution\CoreXCrud\bin\Debug\net8.0\Serilog.dll
+C:\Users\pinar\source\repos\CoreXCrudSolution\CoreXCrud\bin\Debug\net8.0\Serilog.AspNetCore.dll
+C:\Users\pinar\source\repos\CoreXCrudSolution\CoreXCrud\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+C:\Users\pinar\source\repos\CoreXCrudSolution\CoreXCrud\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+C:\Users\pinar\source\repos\CoreXCrudSolution\CoreXCrud\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+C:\Users\pinar\source\repos\CoreXCrudSolution\CoreXCrud\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+C:\Users\pinar\source\repos\CoreXCrudSolution\CoreXCrud\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+C:\Users\pinar\source\repos\CoreXCrudSolution\CoreXCrud\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+C:\Users\pinar\source\repos\CoreXCrudSolution\CoreXCrud\bin\Debug\net8.0\Serilog.Sinks.File.dll
+C:\Users\pinar\source\repos\CoreXCrudSolution\CoreXCrud\bin\Debug\net8.0\Serilog.Sinks.Seq.dll

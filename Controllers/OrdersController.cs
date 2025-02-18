@@ -4,6 +4,7 @@ using CoreXCrud.Models;
 using CoreXCrud.Repositories;
 using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
+using Serilog;
 
 namespace CoreXCrud.Controllers
 {
@@ -25,6 +26,7 @@ namespace CoreXCrud.Controllers
         [HttpGet]
         public async Task<IActionResult> GetOrders()
         {
+            Log.Information("GET /api/Orders çağrıldı");
             var orders = await _unitOfWork.Orders.GetAllAsync();
             var ordersDto = _mapper.Map<IEnumerable<OrderDto>>(orders);
             return Ok(ordersDto);
@@ -33,8 +35,13 @@ namespace CoreXCrud.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetOrder(int id)
         {
+            Log.Information("GET /api/Orders/{Id} çağrıldı", id);
             var order = await _unitOfWork.Orders.GetByIdAsync(id);
-            if (order == null) return NotFound();
+            if (order == null)
+            {
+                Log.Warning("Sipariş bulunamadı: {Id}", id);
+                return NotFound();
+            }
             var orderDto = _mapper.Map<OrderDto>(order);
             return Ok(orderDto);
         }
@@ -42,9 +49,13 @@ namespace CoreXCrud.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateOrder([FromBody] OrderDto orderDto)
         {
+            Log.Information("POST /api/Orders çağrıldı. Yeni sipariş: {@Order}", orderDto);
             var validationResult = await _validator.ValidateAsync(orderDto);
             if (!validationResult.IsValid)
+            {
+                Log.Warning("Sipariş doğrulama hatası: {@Errors}", validationResult.Errors);
                 return BadRequest(validationResult.Errors);
+            }
 
             var order = _mapper.Map<Order>(orderDto);
             await _unitOfWork.Orders.AddAsync(order);
@@ -58,9 +69,13 @@ namespace CoreXCrud.Controllers
         public async Task<IActionResult> UpdateOrder(int id, [FromBody] OrderDto orderDto)
         {
             if (id != orderDto.Id) return BadRequest();
+            Log.Information("PUT /api/Orders/{Id} çağrıldı. Güncellenen sipariş: {@Order}", id, orderDto);
             var validationResult = await _validator.ValidateAsync(orderDto);
             if (!validationResult.IsValid)
+            {
+                Log.Warning("Sipariş doğrulama hatası: {@Errors}", validationResult.Errors);
                 return BadRequest(validationResult.Errors);
+            }
 
             var order = _mapper.Map<Order>(orderDto);
             await _unitOfWork.Orders.UpdateAsync(order);
@@ -71,6 +86,7 @@ namespace CoreXCrud.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteOrder(int id)
         {
+            Log.Information("DELETE /api/Orders/{Id} çağrıldı", id);
             await _unitOfWork.Orders.DeleteAsync(id);
             await _unitOfWork.CompleteAsync();
             return NoContent();

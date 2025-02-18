@@ -1,0 +1,154 @@
+2025-02-18 19:28:45.701 +03:00 [INF] User profile is available. Using 'C:\Users\pinar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-18 19:28:45.989 +03:00 [INF] Now listening on: https://localhost:7252
+2025-02-18 19:28:45.990 +03:00 [INF] Now listening on: http://localhost:5179
+2025-02-18 19:28:46.103 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-18 19:28:46.105 +03:00 [INF] Hosting environment: Development
+2025-02-18 19:28:46.106 +03:00 [INF] Content root path: C:\Users\pinar\source\repos\CoreXCrudSolution\CoreXCrud
+2025-02-18 19:28:46.845 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/index.html - null null
+2025-02-18 19:28:47.034 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/index.html - 200 null text/html;charset=utf-8 195.2303ms
+2025-02-18 19:28:47.051 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-18 19:28:47.059 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - null null
+2025-02-18 19:28:47.061 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript; charset=utf-8 9.4055ms
+2025-02-18 19:28:47.120 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - 200 null text/javascript; charset=UTF-8 60.852ms
+2025-02-18 19:28:47.167 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - null null
+2025-02-18 19:28:47.203 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7252/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 35.5303ms
+2025-02-18 19:33:57.297 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7252/api/Auth/login - application/json 51
+2025-02-18 19:33:57.502 +03:00 [INF] Executing endpoint 'CoreXCrud.Controllers.AuthController.Login (CoreXCrud)'
+2025-02-18 19:33:57.541 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(CoreXCrud.Controllers.LoginModel) on controller CoreXCrud.Controllers.AuthController (CoreXCrud).
+2025-02-18 19:33:57.596 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-02-18 19:33:57.616 +03:00 [INF] Executed action CoreXCrud.Controllers.AuthController.Login (CoreXCrud) in 68.8328ms
+2025-02-18 19:33:57.618 +03:00 [INF] Executed endpoint 'CoreXCrud.Controllers.AuthController.Login (CoreXCrud)'
+2025-02-18 19:33:57.621 +03:00 [INF] HTTP POST /api/Auth/login responded 401 in 121.6676 ms
+2025-02-18 19:33:57.624 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7252/api/Auth/login - 401 null application/problem+json; charset=utf-8 327.5657ms
+2025-02-18 19:34:26.432 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7252/api/Auth/login - application/json 51
+2025-02-18 19:34:26.444 +03:00 [INF] Executing endpoint 'CoreXCrud.Controllers.AuthController.Login (CoreXCrud)'
+2025-02-18 19:34:26.447 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(CoreXCrud.Controllers.LoginModel) on controller CoreXCrud.Controllers.AuthController (CoreXCrud).
+2025-02-18 19:34:26.472 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-18 19:34:26.476 +03:00 [INF] Executed action CoreXCrud.Controllers.AuthController.Login (CoreXCrud) in 26.6224ms
+2025-02-18 19:34:26.478 +03:00 [INF] Executed endpoint 'CoreXCrud.Controllers.AuthController.Login (CoreXCrud)'
+2025-02-18 19:34:26.479 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 35.2818 ms
+2025-02-18 19:34:26.482 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7252/api/Auth/login - 200 null application/json; charset=utf-8 51.6561ms
+2025-02-18 19:35:13.711 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7252/api/Products - null null
+2025-02-18 19:35:13.768 +03:00 [INF] Executing endpoint 'CoreXCrud.Controllers.ProductsController.GetProducts (CoreXCrud)'
+2025-02-18 19:35:13.777 +03:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProducts() on controller CoreXCrud.Controllers.ProductsController (CoreXCrud).
+2025-02-18 19:35:14.471 +03:00 [INF] GET /api/Products çağrıldı
+2025-02-18 19:35:15.351 +03:00 [INF] Executed DbCommand (320ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CreatedAt], [p].[Description], [p].[ImageUrl], [p].[Name], [p].[Price], [p].[Stock]
+FROM [Products] AS [p]
+2025-02-18 19:35:15.450 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CoreXCrud.DTOs.ProductDto, CoreXCrud, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-18 19:35:15.462 +03:00 [INF] Executed action CoreXCrud.Controllers.ProductsController.GetProducts (CoreXCrud) in 1682.2074ms
+2025-02-18 19:35:15.465 +03:00 [INF] Executed endpoint 'CoreXCrud.Controllers.ProductsController.GetProducts (CoreXCrud)'
+2025-02-18 19:35:15.466 +03:00 [INF] HTTP GET /api/Products responded 200 in 1698.2399 ms
+2025-02-18 19:35:15.475 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7252/api/Products - 200 null application/json; charset=utf-8 1764.1219ms
+2025-02-18 19:36:11.098 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7252/api/OrderDetails - null null
+2025-02-18 19:36:11.108 +03:00 [INF] Executing endpoint 'CoreXCrud.Controllers.OrderDetailsController.GetOrderDetails (CoreXCrud)'
+2025-02-18 19:36:11.114 +03:00 [INF] Route matched with {action = "GetOrderDetails", controller = "OrderDetails"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetOrderDetails() on controller CoreXCrud.Controllers.OrderDetailsController (CoreXCrud).
+2025-02-18 19:36:11.233 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[OrderId], [o].[ProductId], [o].[Quantity], [o].[UnitPrice]
+FROM [OrderDetails] AS [o]
+2025-02-18 19:36:11.240 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CoreXCrud.DTOs.OrderDetailDto, CoreXCrud, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-18 19:36:11.243 +03:00 [INF] Executed action CoreXCrud.Controllers.OrderDetailsController.GetOrderDetails (CoreXCrud) in 126.3557ms
+2025-02-18 19:36:11.245 +03:00 [INF] Executed endpoint 'CoreXCrud.Controllers.OrderDetailsController.GetOrderDetails (CoreXCrud)'
+2025-02-18 19:36:11.246 +03:00 [INF] HTTP GET /api/OrderDetails responded 200 in 137.6302 ms
+2025-02-18 19:36:11.248 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7252/api/OrderDetails - 200 null application/json; charset=utf-8 150.6847ms
+2025-02-18 19:36:27.552 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7252/api/OrderDetails - application/json 86
+2025-02-18 19:36:27.556 +03:00 [INF] Executing endpoint 'CoreXCrud.Controllers.OrderDetailsController.CreateOrderDetail (CoreXCrud)'
+2025-02-18 19:36:27.566 +03:00 [INF] Route matched with {action = "CreateOrderDetail", controller = "OrderDetails"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateOrderDetail(CoreXCrud.DTOs.OrderDetailDto) on controller CoreXCrud.Controllers.OrderDetailsController (CoreXCrud).
+2025-02-18 19:36:27.943 +03:00 [INF] Executed DbCommand (71ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [OrderDetails] ([OrderId], [ProductId], [Quantity], [UnitPrice])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+2025-02-18 19:36:27.998 +03:00 [INF] Executing CreatedAtActionResult, writing value of type 'CoreXCrud.DTOs.OrderDetailDto'.
+2025-02-18 19:36:28.031 +03:00 [INF] Executed action CoreXCrud.Controllers.OrderDetailsController.CreateOrderDetail (CoreXCrud) in 461.4685ms
+2025-02-18 19:36:28.034 +03:00 [INF] Executed endpoint 'CoreXCrud.Controllers.OrderDetailsController.CreateOrderDetail (CoreXCrud)'
+2025-02-18 19:36:28.036 +03:00 [INF] HTTP POST /api/OrderDetails responded 201 in 479.5699 ms
+2025-02-18 19:36:28.039 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7252/api/OrderDetails - 201 null application/json; charset=utf-8 487.1214ms
+2025-02-18 19:36:32.644 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7252/api/OrderDetails - null null
+2025-02-18 19:36:32.655 +03:00 [INF] Executing endpoint 'CoreXCrud.Controllers.OrderDetailsController.GetOrderDetails (CoreXCrud)'
+2025-02-18 19:36:32.657 +03:00 [INF] Route matched with {action = "GetOrderDetails", controller = "OrderDetails"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetOrderDetails() on controller CoreXCrud.Controllers.OrderDetailsController (CoreXCrud).
+2025-02-18 19:36:32.666 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[OrderId], [o].[ProductId], [o].[Quantity], [o].[UnitPrice]
+FROM [OrderDetails] AS [o]
+2025-02-18 19:36:32.672 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CoreXCrud.DTOs.OrderDetailDto, CoreXCrud, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-18 19:36:32.674 +03:00 [INF] Executed action CoreXCrud.Controllers.OrderDetailsController.GetOrderDetails (CoreXCrud) in 14.7959ms
+2025-02-18 19:36:32.675 +03:00 [INF] Executed endpoint 'CoreXCrud.Controllers.OrderDetailsController.GetOrderDetails (CoreXCrud)'
+2025-02-18 19:36:32.676 +03:00 [INF] HTTP GET /api/OrderDetails responded 200 in 21.4406 ms
+2025-02-18 19:36:32.678 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7252/api/OrderDetails - 200 null application/json; charset=utf-8 34.5166ms
+2025-02-18 19:36:49.398 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7252/api/OrderDetails/3 - null null
+2025-02-18 19:36:49.402 +03:00 [INF] Executing endpoint 'CoreXCrud.Controllers.OrderDetailsController.GetOrderDetail (CoreXCrud)'
+2025-02-18 19:36:49.410 +03:00 [INF] Route matched with {action = "GetOrderDetail", controller = "OrderDetails"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetOrderDetail(Int32) on controller CoreXCrud.Controllers.OrderDetailsController (CoreXCrud).
+2025-02-18 19:36:49.621 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[Id], [o].[OrderId], [o].[ProductId], [o].[Quantity], [o].[UnitPrice]
+FROM [OrderDetails] AS [o]
+WHERE [o].[Id] = @__p_0
+2025-02-18 19:36:49.625 +03:00 [INF] Executing OkObjectResult, writing value of type 'CoreXCrud.DTOs.OrderDetailDto'.
+2025-02-18 19:36:49.627 +03:00 [INF] Executed action CoreXCrud.Controllers.OrderDetailsController.GetOrderDetail (CoreXCrud) in 213.8538ms
+2025-02-18 19:36:49.630 +03:00 [INF] Executed endpoint 'CoreXCrud.Controllers.OrderDetailsController.GetOrderDetail (CoreXCrud)'
+2025-02-18 19:36:49.632 +03:00 [INF] HTTP GET /api/OrderDetails/3 responded 200 in 229.5635 ms
+2025-02-18 19:36:49.634 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7252/api/OrderDetails/3 - 200 null application/json; charset=utf-8 236.8909ms
+2025-02-18 19:37:01.641 +03:00 [INF] Request starting HTTP/2 PUT https://localhost:7252/api/OrderDetails/3 - application/json 82
+2025-02-18 19:37:01.645 +03:00 [INF] Executing endpoint 'CoreXCrud.Controllers.OrderDetailsController.UpdateOrderDetail (CoreXCrud)'
+2025-02-18 19:37:01.654 +03:00 [INF] Route matched with {action = "UpdateOrderDetail", controller = "OrderDetails"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateOrderDetail(Int32, CoreXCrud.DTOs.OrderDetailDto) on controller CoreXCrud.Controllers.OrderDetailsController (CoreXCrud).
+2025-02-18 19:37:01.682 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-02-18 19:37:01.691 +03:00 [INF] Executed action CoreXCrud.Controllers.OrderDetailsController.UpdateOrderDetail (CoreXCrud) in 33.5ms
+2025-02-18 19:37:01.694 +03:00 [INF] Executed endpoint 'CoreXCrud.Controllers.OrderDetailsController.UpdateOrderDetail (CoreXCrud)'
+2025-02-18 19:37:01.695 +03:00 [INF] HTTP PUT /api/OrderDetails/3 responded 400 in 50.7953 ms
+2025-02-18 19:37:01.699 +03:00 [INF] Request finished HTTP/2 PUT https://localhost:7252/api/OrderDetails/3 - 400 null application/problem+json; charset=utf-8 58.2671ms
+2025-02-18 19:37:08.901 +03:00 [INF] Request starting HTTP/2 PUT https://localhost:7252/api/OrderDetails/2 - application/json 82
+2025-02-18 19:37:08.905 +03:00 [INF] Executing endpoint 'CoreXCrud.Controllers.OrderDetailsController.UpdateOrderDetail (CoreXCrud)'
+2025-02-18 19:37:08.907 +03:00 [INF] Route matched with {action = "UpdateOrderDetail", controller = "OrderDetails"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateOrderDetail(Int32, CoreXCrud.DTOs.OrderDetailDto) on controller CoreXCrud.Controllers.OrderDetailsController (CoreXCrud).
+2025-02-18 19:37:08.911 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-02-18 19:37:08.913 +03:00 [INF] Executed action CoreXCrud.Controllers.OrderDetailsController.UpdateOrderDetail (CoreXCrud) in 4.2752ms
+2025-02-18 19:37:08.915 +03:00 [INF] Executed endpoint 'CoreXCrud.Controllers.OrderDetailsController.UpdateOrderDetail (CoreXCrud)'
+2025-02-18 19:37:08.916 +03:00 [INF] HTTP PUT /api/OrderDetails/2 responded 400 in 11.1496 ms
+2025-02-18 19:37:08.918 +03:00 [INF] Request finished HTTP/2 PUT https://localhost:7252/api/OrderDetails/2 - 400 null application/problem+json; charset=utf-8 17.4881ms
+2025-02-18 19:37:22.522 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7252/api/Orders - null null
+2025-02-18 19:37:22.526 +03:00 [INF] Executing endpoint 'CoreXCrud.Controllers.OrdersController.GetOrders (CoreXCrud)'
+2025-02-18 19:37:22.532 +03:00 [INF] Route matched with {action = "GetOrders", controller = "Orders"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetOrders() on controller CoreXCrud.Controllers.OrdersController (CoreXCrud).
+2025-02-18 19:37:22.563 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[OrderDate], [o].[TotalAmount], [o].[UserId]
+FROM [Orders] AS [o]
+2025-02-18 19:37:22.592 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CoreXCrud.DTOs.OrderDto, CoreXCrud, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-18 19:37:22.603 +03:00 [INF] Executed action CoreXCrud.Controllers.OrdersController.GetOrders (CoreXCrud) in 68.5169ms
+2025-02-18 19:37:22.619 +03:00 [INF] Executed endpoint 'CoreXCrud.Controllers.OrdersController.GetOrders (CoreXCrud)'
+2025-02-18 19:37:22.621 +03:00 [INF] HTTP GET /api/Orders responded 200 in 95.0298 ms
+2025-02-18 19:37:22.624 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7252/api/Orders - 200 null application/json; charset=utf-8 102.3249ms
+2025-02-18 19:37:36.428 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7252/api/Users - null null
+2025-02-18 19:37:36.431 +03:00 [INF] Executing endpoint 'CoreXCrud.Controllers.UsersController.GetUsers (CoreXCrud)'
+2025-02-18 19:37:36.440 +03:00 [INF] Route matched with {action = "GetUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUsers() on controller CoreXCrud.Controllers.UsersController (CoreXCrud).
+2025-02-18 19:37:36.460 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FullName], [u].[PasswordHash], [u].[Role]
+FROM [Users] AS [u]
+2025-02-18 19:37:36.492 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CoreXCrud.DTOs.UserDto, CoreXCrud, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-18 19:37:36.500 +03:00 [INF] Executed action CoreXCrud.Controllers.UsersController.GetUsers (CoreXCrud) in 58.2652ms
+2025-02-18 19:37:36.504 +03:00 [INF] Executed endpoint 'CoreXCrud.Controllers.UsersController.GetUsers (CoreXCrud)'
+2025-02-18 19:37:36.507 +03:00 [INF] HTTP GET /api/Users responded 200 in 75.3445 ms
+2025-02-18 19:37:36.511 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7252/api/Users - 200 null application/json; charset=utf-8 83.8917ms
+2025-02-18 19:38:09.125 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7252/api/Users - application/json 59
+2025-02-18 19:38:09.138 +03:00 [INF] Executing endpoint 'CoreXCrud.Controllers.UsersController.CreateUser (CoreXCrud)'
+2025-02-18 19:38:09.146 +03:00 [INF] Route matched with {action = "CreateUser", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateUser(CoreXCrud.DTOs.UserDto) on controller CoreXCrud.Controllers.UsersController (CoreXCrud).
+2025-02-18 19:38:09.176 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-02-18 19:38:09.178 +03:00 [INF] Executed action CoreXCrud.Controllers.UsersController.CreateUser (CoreXCrud) in 28.2055ms
+2025-02-18 19:38:09.180 +03:00 [INF] Executed endpoint 'CoreXCrud.Controllers.UsersController.CreateUser (CoreXCrud)'
+2025-02-18 19:38:09.182 +03:00 [INF] HTTP POST /api/Users responded 400 in 44.2758 ms
+2025-02-18 19:38:09.185 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7252/api/Users - 400 null application/problem+json; charset=utf-8 59.7324ms
+2025-02-18 19:50:15.280 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-18 19:50:15.331 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-18 19:50:15.333 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-18 19:50:15.335 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-18 19:50:15.355 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-02-18 19:50:15.365 +03:00 [INF] Applying migration '20250218164931_AddOrderStatusField'.
+2025-02-18 19:50:15.473 +03:00 [INF] Executed DbCommand (77ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Orders] ADD [Status] nvarchar(20) NOT NULL DEFAULT N'';
+2025-02-18 19:50:15.498 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20250218164931_AddOrderStatusField', N'8.0.0');
