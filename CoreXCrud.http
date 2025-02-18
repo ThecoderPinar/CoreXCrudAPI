@@ -1,0 +1,6 @@
+@CoreXCrud_HostAddress = http://localhost:5179
+
+GET {{CoreXCrud_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
