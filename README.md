@@ -517,3 +517,7 @@ API kullanımı sırasında oluşabilecek hata durumlarını ve döndürülebile
 CoreXCrud, **modern, güvenli ve ölçeklenebilir bir API** olarak geliştirilmiştir. **.NET 8**, **JWT Authentication**, **FluentValidation**, **Serilog**, **AutoMapper** gibi en güncel teknolojilerle desteklenmiştir.
 
 🚀 **Her şey başarıyla tamamlandı, şimdi projenizi kullanmaya başlayabilirsiniz!** 🔥
+
+## Lisans
+
+Bu proje [MIT Lisansı](LICENSE) kapsamında kullanıma sunulmuştur.
