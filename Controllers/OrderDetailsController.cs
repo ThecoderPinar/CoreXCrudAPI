@@ -4,12 +4,14 @@ using CoreXCrud.Models;
 using CoreXCrud.Repositories;
 using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CoreXCrud.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class OrderDetailsController : ControllerBase
+[Authorize] // 📌 JWT ile yetkilendirme ekledik
+[Route("api/[controller]")]
+[ApiController]
+public class OrderDetailsController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;

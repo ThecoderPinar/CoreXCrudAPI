@@ -179,6 +179,8 @@ https://localhost:7252/swagger
 
 ## 📊 API Modülleri ve Uç Noktalar
 
+> **Not:** `/api/Auth/login` haricindeki tüm uç noktalar JWT ile korunur. İsteklerinizde `Authorization: Bearer {token}` başlığını göndermeniz gerekir.
+
 ### 🧑‍💼 1️⃣ Kullanıcı Yönetimi (Users)
 
 Kullanıcı yönetimi API'si, sistemdeki kullanıcıları yönetmek için kullanılır.
