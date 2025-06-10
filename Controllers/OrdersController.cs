@@ -4,13 +4,15 @@ using CoreXCrud.Models;
 using CoreXCrud.Repositories;
 using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using Serilog;
 
 namespace CoreXCrud.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class OrdersController : ControllerBase
+[Authorize] // 📌 JWT ile yetkilendirme ekledik
+[Route("api/[controller]")]
+[ApiController]
+public class OrdersController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
