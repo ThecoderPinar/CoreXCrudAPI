@@ -1,7 +1,7 @@
-﻿using CoreXCrud.DTOs;
+﻿using CoreXCrud.DTOs.UserDtos;
 using FluentValidation;
 
-namespace CoreXCrud.Validators
+namespace CoreXCrud.Validators.UserValidators
 {
     public class UserValidator : AbstractValidator<UserDto>
     {

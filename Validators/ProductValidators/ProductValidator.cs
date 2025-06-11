@@ -1,7 +1,7 @@
-﻿using CoreXCrud.DTOs;
+﻿using CoreXCrud.DTOs.ProductDtos;
 using FluentValidation;
 
-namespace CoreXCrud.Validators
+namespace CoreXCrud.Validators.ProductValidators
 {
     public class ProductValidator : AbstractValidator<ProductDto>
     {

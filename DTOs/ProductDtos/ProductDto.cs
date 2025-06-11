@@ -1,4 +1,4 @@
-﻿namespace CoreXCrud.DTOs
+﻿namespace CoreXCrud.DTOs.ProductDtos
 {
     /// <summary>
     /// Ürün DTO Modeli
