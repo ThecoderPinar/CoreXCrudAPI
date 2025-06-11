@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using CoreXCrud.Models;
+using CoreXCrud.Entities;
 
 namespace CoreXCrud.Data
 {
