@@ -4,14 +4,14 @@ using Microsoft.EntityFrameworkCore;
 using AutoMapper;
 using FluentValidation;
 using FluentValidation.AspNetCore;
-using CoreXCrud.DTOs;
-using CoreXCrud.Validators;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
 using AspNetCoreRateLimit;
 using Serilog;
+using CoreXCrud.Mappings;
+using CoreXCrud.Validators.UserValidators;
 
 var builder = WebApplication.CreateBuilder(args);
 

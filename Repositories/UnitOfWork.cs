@@ -1,5 +1,5 @@
 ﻿using CoreXCrud.Data;
-using CoreXCrud.Models;
+using CoreXCrud.Entities;
 
 namespace CoreXCrud.Repositories
 {

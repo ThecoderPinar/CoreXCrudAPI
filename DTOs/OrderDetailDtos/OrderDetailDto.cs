@@ -1,4 +1,4 @@
-﻿namespace CoreXCrud.DTOs
+﻿namespace CoreXCrud.DTOs.OrderDetailDtos
 {
     /// <summary>
     /// Sipariş Detay DTO Modeli

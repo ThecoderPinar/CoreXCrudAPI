@@ -1,7 +1,7 @@
-﻿using CoreXCrud.DTOs;
+﻿using CoreXCrud.DTOs.OrderDtos;
 using FluentValidation;
 
-namespace CoreXCrud.Validators
+namespace CoreXCrud.Validators.OrderValidators
 {
     public class OrderValidator : AbstractValidator<OrderDto>
     {
