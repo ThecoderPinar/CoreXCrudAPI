@@ -1,4 +1,4 @@
-﻿using CoreXCrud.DTOs;
+﻿using CoreXCrud.DTOs.OrderDetailDtos;
 using FluentValidation;
 
 namespace CoreXCrud.Validators

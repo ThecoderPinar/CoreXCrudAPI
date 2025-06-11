@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using CoreXCrud.DTOs;
+using CoreXCrud.DTOs.ProductDtos;
 using CoreXCrud.Models;
 using CoreXCrud.Repositories;
 using FluentValidation;

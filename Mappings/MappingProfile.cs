@@ -1,8 +1,11 @@
 ﻿using AutoMapper;
-using CoreXCrud.DTOs;
+using CoreXCrud.DTOs.OrderDetailDtos;
+using CoreXCrud.DTOs.OrderDtos;
+using CoreXCrud.DTOs.ProductDtos;
+using CoreXCrud.DTOs.UserDtos;
 using CoreXCrud.Models;
 
-namespace CoreXCrud.DTOs
+namespace CoreXCrud.Mappings
 {
     public class MappingProfile : Profile
     {

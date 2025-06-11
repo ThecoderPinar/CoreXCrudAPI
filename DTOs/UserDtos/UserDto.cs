@@ -1,4 +1,4 @@
-﻿namespace CoreXCrud.DTOs
+﻿namespace CoreXCrud.DTOs.UserDtos
 {
     /// <summary>
     /// Kullanıcı DTO Modeli
