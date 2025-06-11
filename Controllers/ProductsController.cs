@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using CoreXCrud.DTOs.ProductDtos;
-using CoreXCrud.Models;
+using CoreXCrud.Entities;
 using CoreXCrud.Repositories;
 using FluentValidation;
 using Microsoft.AspNetCore.Authorization;

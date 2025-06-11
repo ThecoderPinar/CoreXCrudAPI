@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
-using CoreXCrud.Models;
 using CoreXCrud.Repositories;
 using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using CoreXCrud.DTOs.OrderDetailDtos;
+using CoreXCrud.Entities;
 
 namespace CoreXCrud.Controllers
 {

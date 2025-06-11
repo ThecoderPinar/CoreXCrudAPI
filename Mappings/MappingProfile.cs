@@ -3,7 +3,7 @@ using CoreXCrud.DTOs.OrderDetailDtos;
 using CoreXCrud.DTOs.OrderDtos;
 using CoreXCrud.DTOs.ProductDtos;
 using CoreXCrud.DTOs.UserDtos;
-using CoreXCrud.Models;
+using CoreXCrud.Entities;
 
 namespace CoreXCrud.Mappings
 {
